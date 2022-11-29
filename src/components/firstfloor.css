@@ -1,0 +1,172 @@
+.firstfloor-content{
+    margin-top: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: rgba(87, 87, 87, 0.368);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.firstfloor-content1{
+    background-color: rgba(87, 87, 87, 0.368);
+    max-width: 1130px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.firstfloor-content2{
+    max-width: 620px;
+}
+.box {
+    margin-top: 1rem;
+    background-color: transparent;
+    width: 320px;
+    height: 180px;
+    perspective: 1000px;
+    }
+    .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    }
+    .box:hover .box-inner {
+    transform: rotateY(180deg);
+    }
+    .box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    }
+    .box-front {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    }
+    .box-back {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    transform: rotateY(180deg);
+    }
+    .box-color-white{
+        background-color: #cccccc;
+        color: #111111;
+    }
+    .box-color-black{
+        background-color: #111111;
+        color: #cccccc;
+    }
+    .box-color-blue{
+        background-color: rgb(28, 73, 156);;
+        color: #cccccc;
+    }
+
+.name-tag{
+    text-align: left;
+    margin-left: 10px;
+}
+.card-tag{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.card-data-tag{
+    text-align: right;
+    font-size: 1rem;
+    margin-right: 115px;
+}
+.card-bank-tag{
+    text-align: right;
+    margin-right: 15px;
+    font-size: 1rem;
+}
+.card-line{
+    background-color: gray;
+    margin-top: 15px;
+    font-size: 1.5rem; 
+}
+.card-ccv{
+    text-align: right;
+    margin-right: 15px;
+    margin-left: auto;
+    background-color: gray;
+    font-size: 1.3rem;
+}
+
+.firstfloor-content3{
+    max-width: 480px;
+    margin-left: 5px;
+}
+
+.button-black{
+    background-color: black;
+    border-radius:50%;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.button-white{
+    background-color: white;
+    border-radius:50%;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.button-blue{
+    background-color: rgba(28, 73, 156, 0.87);
+    border-radius:50%;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.button-go-to-order{
+    border-radius:4px;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.612);
+    margin-left: 40px;
+    cursor: pointer;
+}
+.word-style{
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.input-number{
+    max-width: 28.8px;
+    margin-right: 4px; 
+}
+.input-cvv{
+    max-width: 28.8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+@media screen and (max-device-width: 800px) {
+    .firstfloor-content{max-width: 480px;}
+    .firstfloor-content1{max-width: 480px;}
+    .firstfloor-content2{max-width: 320px;}
+    .firstfloor-content3{max-width: 240px;}
+    .box{height: 160px;}
+}

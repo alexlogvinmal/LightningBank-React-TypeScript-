@@ -1,0 +1,9 @@
+.viewport-main{
+    color: white;
+    position: absolute;
+    flex-direction: column;
+    right:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+  }
