@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
+import { Orderform } from './Orderform';
 import './firstfloor.css';
+
+
+
+
 
 export function Firstfloor() {
 
@@ -78,9 +83,12 @@ export function Firstfloor() {
             inputCvv='777'
         }
     }
+    const [statusOrder, setStatusOrder] = useState(false);
+
 
     return (
         <div>
+            {statusOrder ? <Orderform whatBank={whatBank} numberBank={inputBankNumber} firstNumber={inputFirst} secondNumber={inputSecond} thirdNumber={inputThird} cvvNumber={inputCvv} />   : ''}
             <div className='firstfloor-content description-style'>
                 Only in our bank you can create a card completely for yourself
             </div>
@@ -121,7 +129,7 @@ export function Firstfloor() {
                     <div className='word-style'>Create your unique CVV : </div>
                     <input className='input-cvv' onInput={changeCvv}></input>
                     <div>&nbsp;</div>
-                    <button className='button-go-to-order'>Go to order</button>
+                    <button className='button-go-to-order' onClick={() =>setStatusOrder(prev => true)}>Go to order</button>
                 </div>
             </div>
 
