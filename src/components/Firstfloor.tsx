@@ -20,9 +20,14 @@ export function Firstfloor() {
     }
 
     let [inputFirst, setinputFirst] = useState('4141');
-    function changeFirst(event:any) { 
+    function changeFirst(event:any) {
         if(event.target.value.length==4){
             setinputFirst(event.target.value); 
+        }else if(event.target.value.length>4){
+            alert('this column can have only 4 numbers')
+            event.target.value = '';
+            setinputFirst('4141');
+            inputFirst='4141'
         }
     }
 
@@ -30,6 +35,11 @@ export function Firstfloor() {
     function changeSecond(event:any) { 
         if(event.target.value.length==4){
             setinputSecond(event.target.value); 
+        }else if(event.target.value.length>4){
+            alert('this column can have only 4 numbers')
+            event.target.value = '';
+            setinputSecond('2561');
+            inputSecond='2561'
         }
     }
 
@@ -37,6 +47,11 @@ export function Firstfloor() {
     function changeThird(event:any) { 
         if(event.target.value.length==4){
             setinputThird(event.target.value); 
+        }else if(event.target.value.length>4){
+            alert('this column can have only 4 numbers')
+            event.target.value = '';
+            setinputThird('1094');
+            inputThird='1094'
         }
     }
 
@@ -56,12 +71,17 @@ export function Firstfloor() {
     function changeCvv(event:any) { 
         if(event.target.value.length==3){
             setCvv(event.target.value);
+        }else if(event.target.value.length>3){
+            alert('CVV can have only 3 numbers')
+            event.target.value = '';
+            setCvv('777');
+            inputCvv='777'
         }
     }
 
     return (
         <div>
-            <div className='firstfloor-content'>
+            <div className='firstfloor-content description-style'>
                 Only in our bank you can create a card completely for yourself
             </div>
             <div className='firstfloor-content1'>
