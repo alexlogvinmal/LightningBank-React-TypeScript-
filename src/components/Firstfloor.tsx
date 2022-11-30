@@ -84,20 +84,20 @@ export function Firstfloor() {
         }
     }
     const [statusOrder, setStatusOrder] = useState(false);
-
+    
 
     return (
         <div>
-            {statusOrder ? <Orderform whatBank={whatBank} numberBank={inputBankNumber} firstNumber={inputFirst} secondNumber={inputSecond} thirdNumber={inputThird} cvvNumber={inputCvv} />   : ''}
+            {statusOrder ? <Orderform whatBank={whatBank} numberBank={inputBankNumber} firstNumber={inputFirst} secondNumber={inputSecond} thirdNumber={inputThird} cvvNumber={inputCvv}/>   : ''}
             <div className='firstfloor-content description-style'>
                 Only in our bank you can create a card completely for yourself
             </div>
             <div className='firstfloor-content1'>
                 <div className='firstfloor-content2 box'>
-                    <div className="box-inner">
-                        <div className={switchColorFront}>
+                    {statusOrder ? '' : <div className='box-inner'>
+                         <div className={switchColorFront}>
                             <div className="name-tag"><h5><i >LightningBank</i> | <small>Universal Bank</small></h5></div>
-                            <div>&nbsp;</div>
+                            <div className='vhiden'>&nbsp;</div>
                             <div>&nbsp;</div>
                             <div className="card-tag">{inputBankNumber}&nbsp;&nbsp;{inputFirst}&nbsp;&nbsp;{inputSecond}&nbsp;&nbsp;{inputThird}</div>
                             <div className="card-data-tag">12/99</div> 
@@ -105,14 +105,14 @@ export function Firstfloor() {
                         </div>
                         <div className={switchColorBack}>
                             <div className='card-line'>&nbsp;</div>
-                            <div>&nbsp;</div>
+                            <div className='vhiden'>&nbsp;</div>
                             <div>&nbsp;</div>
                             <div>&nbsp;</div>
                             <div>&nbsp;</div>
                             <div>&nbsp;</div>
                             <div className="card-ccv"><small>{inputCvv}</small></div> 
                         </div>
-                    </div>
+                    </div>}
                 </div>
 
 
