@@ -19,7 +19,7 @@ export function Orderform(props:OrderProps) {
   return (
   <div className='orderform'>
     <div className='form'>
-      <div className='close'><button className='btn-close'>X</button></div>
+      <div className='close'><button className='btn-close black-btn'>X</button></div>
       <div className='order-description'>A few steps and you will become a happy owner of our bank card just need to fill the fields below</div>
       <div className='info'>Your payment system is <i>{props.whatBank}</i></div>
       <div className='info'>Your unique card number is <i>{props.numberBank} {props.firstNumber} {props.secondNumber} {props.thirdNumber}</i></div>
@@ -35,7 +35,7 @@ export function Orderform(props:OrderProps) {
         <div className='form-fil-el'>City <input type="string"></input></div>
         <div className='form-fil-el'>Post adress <input type="string"></input></div>
       </div>
-      <div className='btn-confirm'><button>Confirm</button></div>
+      <div className='btn-confirm'><button className='black-btn'>Confirm</button></div>
     </div>
 
   </div>

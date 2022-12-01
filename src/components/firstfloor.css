@@ -152,6 +152,9 @@
     font-size: 0.75rem;
     cursor: pointer;
 }
+.black-btn{
+    color:black;
+}
 .input-number{
     max-width: 28.8px;
     margin-right: 4px; 

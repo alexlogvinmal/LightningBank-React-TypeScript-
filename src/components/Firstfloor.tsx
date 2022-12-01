@@ -121,7 +121,7 @@ export function Firstfloor() {
                     <button className='button-black' onClick={changeColorToBlack}></button><button className='button-white' onClick={changeColorToWhite}></button><button className='button-blue' onClick={changeColorToBlue}></button>
                     <div>&nbsp;</div>
                     <div>Chose type : </div>
-                    <button className='word-style' onClick={changeBankToVisa}>Visa</button><button className='word-style' onClick={changeBankToMCard}>Mastercard</button>
+                    <button className='word-style black-btn' onClick={changeBankToVisa}>Visa</button><button className='word-style black-btn' onClick={changeBankToMCard}>Mastercard</button>
                     <div>&nbsp;</div>
                     <div className='word-style'>Create your unique number : </div>
                     <input className='input-number' type="number" onInput={changeFirst}/><input className='input-number' type="number" onInput={changeSecond}/><input className='input-number' type="number" onInput={changeThird}/>
@@ -129,7 +129,7 @@ export function Firstfloor() {
                     <div className='word-style'>Create your unique CVV : </div>
                     <input className='input-cvv' onInput={changeCvv}></input>
                     <div>&nbsp;</div>
-                    <button className='button-go-to-order' onClick={() =>setStatusOrder(prev => true)}>Go to order</button>
+                    <button className='button-go-to-order black-btn' onClick={() =>setStatusOrder(prev => true)}>Go to order</button>
                 </div>
             </div>
 
