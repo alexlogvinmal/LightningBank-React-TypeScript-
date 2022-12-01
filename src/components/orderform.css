@@ -51,8 +51,58 @@
     margin-right: 5rem;
     padding-bottom: 1rem;
 }
+
+.wrap {
+    position: absolute;
+    left: 45%;
+    top: 49%;
+    bottom: 49%;
+    
+}
+
+.wrap>* {
+    position: absolute;
+}
+
+.check-sign {
+    position: absolute;
+    background: #67b2ce;
+}
+
+#check-part-1 {
+    width: 0;
+    height: 20px;    
+    transform:rotate(45deg);	
+    transform-origin: 0 10px;
+    left: 21px;
+    top: -20px;
+    animation: part-1 2s ease-in-out forwards;
+}
+
+#check-part-2 {
+    width: 0;
+    height: 20px;    
+    transform: rotate(-45deg);
+    left: 56.3px;
+    top: 2px;
+    transform-origin: 0 10px;
+    animation: part-2 2s 2s forwards;
+}
+
+@keyframes part-1  {
+    to {
+        width: 51px;
+    }
+}
+@keyframes part-2  {
+    to {
+        width: 60px;
+    }
+}
+
 @media screen and (max-device-width: 800px) {
     .form{max-width:100%; width: auto;}
     .form-fill{flex-direction: column; align-items: center;}
     .btn-confirm{margin-right: 0; text-align: center; padding-top: 1rem;}
+    .wrap{left: 39%; top: 60%; bottom: auto;}
 }
