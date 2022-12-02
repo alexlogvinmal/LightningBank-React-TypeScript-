@@ -63,5 +63,6 @@ hr{
 
 @media screen and (max-device-width: 800px) {
     .thirdfloor{max-width: 480px;width: auto;}
-    .calc-info{width: auto;}
+    .calc-info{width: 215px;}
+    .thirdfloor-description{font-size: 0.75rem}
 }
