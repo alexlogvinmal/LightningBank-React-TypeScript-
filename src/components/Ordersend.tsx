@@ -5,10 +5,6 @@ import './orderform.css';
 
 export function Ordersend() {
 
-
-
-
-
   return (
 
         <div className="wrap">
